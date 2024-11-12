@@ -1,2 +1,2 @@
 # sturdy-waffle
-Ohjelmistotuotanto osa 2 konfiguraatiorepo
+Ohjelmistotuotanto-kurssin konfiguraatiotehtävä repo
