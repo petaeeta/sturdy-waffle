@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241126 17:03:31.676" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="D:\ohtuvarasto\sturdy-waffle\osa3\login-robot\src\tests">
+<suite id="s1-s1" name="Login" source="D:\ohtuvarasto\sturdy-waffle\osa3\login-robot\src\tests\login.robot">
+<test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20241126 17:03:31.716" endtime="20241126 17:03:31.716"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>login</arg>
+<status status="PASS" starttime="20241126 17:03:31.716" endtime="20241126 17:03:31.716"/>
+</kw>
+<status status="PASS" starttime="20241126 17:03:31.716" endtime="20241126 17:03:31.716"/>
+</kw>
+<status status="PASS" starttime="20241126 17:03:31.715" endtime="20241126 17:03:31.716"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<kw name="Input" library="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" starttime="20241126 17:03:31.716" endtime="20241126 17:03:31.717"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" starttime="20241126 17:03:31.717" endtime="20241126 17:03:31.717"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20241126 17:03:31.717" endtime="20241126 17:03:31.717"/>
+</kw>
+<status status="PASS" starttime="20241126 17:03:31.716" endtime="20241126 17:03:31.717"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Logged in</arg>
+<status status="PASS" starttime="20241126 17:03:31.717" endtime="20241126 17:03:31.717"/>
+</kw>
+<status status="PASS" starttime="20241126 17:03:31.715" endtime="20241126 17:03:31.717"/>
+</test>
+<status status="PASS" starttime="20241126 17:03:31.700" endtime="20241126 17:03:31.718"/>
+</suite>
+<status status="PASS" starttime="20241126 17:03:31.677" endtime="20241126 17:03:31.719"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
